@@ -29,11 +29,11 @@ Structure:</strong> Header.Payload.Signature
   - **Private Claims**: Custom data agreed between sender and receiver.
 
   Example:
-  `{
+  ```{
     "sub": "1234567890", // Subject (e.g., user ID)
     "name": "John Doe",  // Custom claim
     "iat": 1516239022    // Issued at timestamp
-  }`
+  }```
 
   Encoded as:  
   eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ
