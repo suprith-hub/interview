@@ -4,7 +4,9 @@
   <summary><strong>
     Explain JSON Web Token (JWT) Structure
   </summary>
+    
 Structure:</strong> Header.Payload.Signature
+    
 - **Header**:  
   A Base64URL-encoded JSON object that describes the token type and the signing algorithm used.
 
