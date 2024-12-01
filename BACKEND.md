@@ -9,10 +9,10 @@ Structure:</strong> Header.Payload.Signature
   A Base64URL-encoded JSON object that describes the token type and the signing algorithm used.
 
   Example:
-  {
+  `{
     "alg": "HS256", // Algorithm used for signing (e.g., HMAC SHA256)
     "typ": "JWT"    // Token type
-  }
+  }`
 
   Encoded as:  
   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
@@ -29,11 +29,11 @@ Structure:</strong> Header.Payload.Signature
   - **Private Claims**: Custom data agreed between sender and receiver.
 
   Example:
-  {
+  `{
     "sub": "1234567890", // Subject (e.g., user ID)
     "name": "John Doe",  // Custom claim
     "iat": 1516239022    // Issued at timestamp
-  }
+  }`
 
   Encoded as:  
   eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ
@@ -41,10 +41,10 @@ Structure:</strong> Header.Payload.Signature
 - **Signature**:  
   The signature ensures the integrity of the token. It is generated using the following:
 
-  HMACSHA256(
+ ` HMACSHA256(
     base64UrlEncode(header) + "." + base64UrlEncode(payload),
     secret
-  )
+  )`
 
   Example signature:  
   SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
